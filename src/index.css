@@ -2,7 +2,7 @@
 
 /* Font Faces */
 @font-face {
-	font-family: var(--font-clash-variable);
+	font-family: "Clash Display Variable";
 	src: url("./fonts/ClashDisplay-Variable.woff2") format("woff2-variations"),
 		url("./fonts/ClashDisplay-Variable.woff") format("woff-variations");
 	font-weight: 200 700; /* Covers Extralight(200) to Bold(700) */
