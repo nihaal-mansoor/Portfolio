@@ -5,7 +5,7 @@
 	font-family: "Clash Display Variable";
 	src: url("./fonts/ClashDisplay-Variable.woff2") format("woff2-variations"),
 		url("./fonts/ClashDisplay-Variable.woff") format("woff-variations");
-	font-weight: 200 700; /* Covers Extralight(200) to Bold(700) */
+	font-weight: 200 700;
 	font-style: normal;
 	font-display: swap;
 }
@@ -13,7 +13,7 @@
 /* CSS Variables */
 :root {
 	--accent-100: #ff4d4d;
-	--text-100: #ffecda;
+	--text-100: #ffffff;
 	--bg-100: #141721;
 	--bg-form: #151721;
 	--button-bg: var(--accent-100);
@@ -23,13 +23,10 @@
 	/* Typography variables */
 	--font-clash-variable: "Clash Display Variable", sans-serif;
 	--font-playfair: "Playfair Display", serif;
-	/* --font-clash-regular: "ClashDisplay-Regular", sans-serif;
-	--font-clash-semibold: "ClashDisplay-Semibold", sans-serif;
-	--font-clash-extralight: "ClashDisplay-Extralight", sans-serif; */
 
   /* Typography Scale */
 	--text-xs: clamp(12px, 2.5vw, 14px);
-	--text-sm: clamp(14px, 3vw, 16px);
+	--text-sm: 16px;
 	--text-base: clamp(16px, 3.5vw, 18px);
 	--text-lg: clamp(18px, 4vw, 24px);
 	--text-xl: clamp(24px, 5vw, 32px);
@@ -59,12 +56,6 @@
 	--font-medium: 500;
 	--font-semibold: 600;
 	--font-bold: 700;
-
-  /* Letter Spacing */
-	/* --ls-tight: -0.02em;
-	--ls-normal: 0;
-	--ls-wide: 0.05em;
-	--ls-wider: 0.1em; */
 }
 
 /* Reset */
@@ -82,7 +73,8 @@ a { text-decoration: none; }
 
 /* Base Styles */
 body {
-  border: solid 1px var(--text-100);
+	font-family: var(--font-clash-variable);
+  	border: solid 1px var(--text-100);
 	background: var(--bg-100);
 	color: var(--text-100);
 	background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
@@ -133,10 +125,10 @@ hr {
   border: 0.5px solid var(--text-100);
 }
 
-h1, h2, h3,
+/* h1, h2, h3,
 span {
   line-height: normal;
-}
+} */
 
 a {
   background: linear-gradient(to right, var(--accent-100) 0%, var(--accent-100) 50%, var(--text-100) 50%);
@@ -153,16 +145,16 @@ a:hover { background-position: 0%; }
 
 p,
 accent {
-	letter-spacing: 0.09em;
+	letter-spacing: 0.05em;
 	line-height: 1.6;
-  word-spacing: 0.09em;
+  word-spacing: 0.3em;
 	color: var(--text-100);
 	margin: 0;
 }
 
 .accent-100 { color: var(--accent-100); }
 
-.line-height-base { line-height: 0.6em; }
+.line-height-base { line-height: 1.4; }
 
 .border-bottom { border-bottom: solid 1px var(--border); }
 
@@ -187,11 +179,6 @@ accent {
 	gap: 1.5rem;
   align-items: center;
 }
-
-/* .nav-links li a {
-	color: var(--text-100);
-	font-family: var(--font-clash-extralight);
-} */
 
 .hire-button {
 	background-color: var(--button-bg);
@@ -231,23 +218,6 @@ accent {
 }
 
 /* Hero Typography */
-#hero h1.main-heading {
-	/* font-family: var(--font-clash-variable); */
-	/* font-size: clamp(70px, 12vw, 200px); */
-	/* font-weight: 200; */
-	/* line-height: normal;
-	white-space: nowrap;
-	letter-spacing: -2px;
-	text-transform: uppercase; */
-}
-
-/* #hero h1.main-heading span { */
-	/* font-family: var(--font-clash-variable); */
-	/* font-size: clamp(70px, 12vw, 200px); */
-	/* font-weight: 600; */
-	/* text-transform: uppercase; */
-	/* letter-spacing: -2px; */
-/* } */
 
 #hero h2.sub-heading_1:hover {
 	font-style: normal;
@@ -263,24 +233,6 @@ accent {
 	display: flex;
 	position: relative;
 	transition: padding-right 0.4s cubic-bezier(0.1, 0.5, 0.5, 1);
-}
-
-
-
-#hero h2.sub-heading_1 span {
-	/* font-family: var(--font-playfair); */
-	/* font-size: clamp(45px, 8vw, 150px); */
-	/* font-weight: 700; */
-	/* line-height: normal; */
-	/* color: var(--accent-100); */
-}
-
-.sub_heading_2 {
-	/* font-family: var(--font-playfair); */
-	/* font-size: clamp(45px, 8vw, 150px); */
-	/* font-weight: 200;
-	line-height: normal;
-	white-space: nowrap; */
 }
 
 /* Hover Effect */
@@ -377,7 +329,7 @@ form textarea:focus-visible {
 }
 
 form button {
-  background: linear-gradient(to right, var(--bg-100) 50%, var(--button-bg) 50%);
+  background: linear-gradient(to right, transparent 50%, var(--button-bg) 50%);
   background-size: 200% 100%;
   background-position: 100%;
   color: var(--button-text);
@@ -391,7 +343,6 @@ form button {
 
 form button:hover {
   background-position: 0%;
-  /* border: solid 1px var(--text-100); */
 }
 
 /* Content Sections */

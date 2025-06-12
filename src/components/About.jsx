@@ -4,9 +4,9 @@ const About = () => {
   return (
     <section id="about" className="about">
         <div className="container">
-            <h2 className="text-4xl font-clash-regular split-text"><span className="text-4xl font-clash-bold accent-100">A</span>BOUT</h2>
+            <h2 className="font-playfair text-4xl font-clash-regular split-text line-height-base"><span className="text-4xl font-clash-bold accent-100">A</span>BOUT</h2>
             <hr />
-            <p className="font-clash text-sm font-clash-light">With over four years of hands-on experience in front-end web development, I specialize in creating
+            <p className="text-sm font-clash-regular">With over four years of hands-on experience in front-end web development, I specialize in creating
                 high-performance, responsive <span className="font-clash-medium accent-100">WordPress</span> websites tailored to the unique
                 needs and objectives of each client. From crafting compelling landing pages to delivering comprehensive
                 web solutions, I am committed to transforming business visions into engaging online experiences through
