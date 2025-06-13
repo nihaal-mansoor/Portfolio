@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className='border-top d-flex'>
         <div className="social-links d-flex">
             <a
-            href="https://www.linkedin.com/in/nihaal-khan-1b1b1b1b1b/"
+            href="https://www.linkedin.com/in/nihaal-mansoor-867486228"
             target="_blank"
             rel="noopener noreferrer"
             >
@@ -19,7 +19,7 @@ const Footer = () => {
             />
             </a>
             <a 
-            href="https://github.com/nihaal-khan"
+            href="https://github.com/nihaal-mansoor"
             target="_blank"
             rel="noopener noreferrer"
             >
