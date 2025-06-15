@@ -88,8 +88,7 @@ export const useHRAnimation = (scope, dependencies = []) => {
   const containerRef = useRef(null);
 
   useGSAP(() => {
-    const elements = containerRef.current?.querySelectorAll('.lineHr') || [];
-    console.log(elements);
+    const elements = containerRef.current?.querySelectorAll('hr') || [];
       elements.forEach((element) => {
         // Set initial state
         gsap.set(element, {
@@ -128,10 +127,10 @@ export const useCustomGSAP = (animationFunction, dependencies = [], options = {}
         return animationFunction(containerRef.current);
       }
     },
-    { 
-      scope: containerRef, 
+    {
+      scope: containerRef,
       dependencies,
-      ...options 
+      ...options
     }
   );
 

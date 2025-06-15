@@ -4,6 +4,7 @@ import websiteMaintenanceIcon from '../assets/website-maintenance-icon.svg';
 import uiUxDesignIcon from '../assets/ui-ux-design-icon.svg';
 import consultationIcon from '../assets/consultation-icon.svg';
 import AnimatedTitle from './AnimatedTitle';
+import AnimatedHR from './AnimatedHR';
 
 const WhatIDo = () => {
 
@@ -11,7 +12,7 @@ const WhatIDo = () => {
     <section id="what-i-do" className="what-i-do">
         <div className="container">
             <AnimatedTitle>WHAT I DO</AnimatedTitle>
-            <hr />
+            <AnimatedHR />
             <div className="what-i-do-list">
                 <div className="what-i-do-item">
                     <img src={ websiteDevelopmentIcon } alt="WordPress" width="30" height="30" />

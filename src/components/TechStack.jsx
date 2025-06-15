@@ -7,6 +7,7 @@ import woocommerceIcon from '../assets/woocommerce-icon.svg';
 import laravelIcon from '../assets/laravel-icon.svg';
 import reactIcon from '../assets/react-icon.svg';
 import AnimatedTitle from './AnimatedTitle';
+import AnimatedHR from './AnimatedHR';
 
 const TechStack = () => {
 
@@ -14,7 +15,7 @@ const TechStack = () => {
     <section id="tech" className="tech-stack">
         <div className="container">
             <AnimatedTitle>TECH STACK</AnimatedTitle>
-            <hr />
+            <AnimatedHR />
             <div className="tech-stack-list">
                 <div className="tech-stack-item">
                     <div className="tech-stack-item-icons">

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useSplitTextAnimation } from '../hooks/useGSAPAnimations.js';
 
 const AnimatedTitle = ({ 

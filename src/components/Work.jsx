@@ -1,4 +1,5 @@
 import AnimatedTitle from './AnimatedTitle';
+import AnimatedHR from './AnimatedHR';
 
 const Work = () => {
 
@@ -6,7 +7,7 @@ const Work = () => {
     <section id="work" className="work">
         <div className="container">
             <AnimatedTitle>WORK</AnimatedTitle>
-            <hr className="lineHr" />
+            <AnimatedHR />
             <div className="job-list">
                 <h3 className="text-base font-clash-medium">Dex AI Solutions LLC – Front-End Developer</h3>
                 <div>

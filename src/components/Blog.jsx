@@ -1,5 +1,6 @@
 import blogImage1 from '../assets/cursor-vs-vscode.png';
 import AnimatedTitle from './AnimatedTitle';
+import AnimatedHR from './AnimatedHR';
 
 const Blog = () => {
 
@@ -7,7 +8,7 @@ const Blog = () => {
     <section id="blog" className="blog">
         <div className="container">
             <AnimatedTitle>BLOG</AnimatedTitle>
-            <hr />
+            <AnimatedHR />
             <div className="blog-list">
                 <div className="blog-list-item">
                     <img src={ blogImage1 } alt="Blog 1" width="200" height="250" />

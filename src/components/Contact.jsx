@@ -1,4 +1,5 @@
 import AnimatedTitle from './AnimatedTitle';
+import AnimatedHR from './AnimatedHR';
 
 const Contact = () => {
 
@@ -6,7 +7,7 @@ const Contact = () => {
     <section id="contact" className="contact">
         <div className="container">
             <AnimatedTitle>CONTACT</AnimatedTitle>
-            <hr />
+            <AnimatedHR />
             <p className="text-lg font-clash-regular">Reach out and let’s make something awesome together.</p>
             <form>
                 <div className="form-row">

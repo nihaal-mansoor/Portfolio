@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Lenis from "@studio-freight/lenis";
 
-
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
@@ -29,6 +28,7 @@ const Header = () => {
   // 3. Helper for buttons/links—safe, memoised
   const scrollToSection = useCallback((id) => {
     const el = document.getElementById(id);
+    
     if (el && lenisRef.current) {
       lenisRef.current.scrollTo(el);
     }
@@ -44,7 +44,7 @@ const Header = () => {
             <div className="nav-toggle" onClick={toggleNav} id="navToggle">&#9776;</div>
             <ul className={`nav-links d-flex ${isActive ? 'active' : ''}`} id="navLinks">
                 <li className="text-sm font-clash-regular"><a onClick={() => scrollToSection('about')}>About</a></li>
-                <li className="text-sm font-clash-regular"><a onClick={() => scrollToSection('services')} >Services</a></li>
+                <li className="text-sm font-clash-regular"><a onClick={() => scrollToSection('what-i-do')} >Services</a></li>
                 <li className="text-sm font-clash-regular"><a onClick={() => scrollToSection('work')} >Work</a></li>
                 <li className="text-sm font-clash-regular"><a onClick={() => scrollToSection('tech')} >Blog</a></li>
                 <li className="text-sm font-clash-regular hire-button"><a onClick={() => scrollToSection('contact')} >Hire Me</a></li>
