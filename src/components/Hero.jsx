@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { useSplitTextAnimation } from '../hooks/useGSAPAnimations.js';
 
 const Hero = () => {
+  
+  const containerRef = useSplitTextAnimation();
+  
   return (
     <section id="hero" className="hero">
-      <div className="container">
+      <div className="container" ref={containerRef}>
           <h1 className="text-6xl font-clash font-clash-extralight split-text">
               HI, I'M <span className="text-6xl font-clash font-clash-semibold split-text">NIHAAL</span>
           </h1>

@@ -33,10 +33,10 @@ const Footer = () => {
         </div>
         <p className="font-clash text-sm font-clash-extralight">Nihaal © 2024. All rights reserved.</p>
        
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+        {/* <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
-        <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+        <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script> */}
         <script src="script.js"></script> 
     </footer>
   )

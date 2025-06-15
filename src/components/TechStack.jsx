@@ -1,4 +1,3 @@
-import React from 'react'
 import wordpressIcon from '../assets/wordpress-icon.svg';
 import phpIcon from '../assets/php-icon.svg';
 import htmlIcon from '../assets/html-icon.svg';
@@ -7,12 +6,14 @@ import jsIcon from '../assets/js-icon.svg';
 import woocommerceIcon from '../assets/woocommerce-icon.svg';
 import laravelIcon from '../assets/laravel-icon.svg';
 import reactIcon from '../assets/react-icon.svg';
+import AnimatedTitle from './AnimatedTitle';
 
 const TechStack = () => {
+
   return (
     <section id="tech" className="tech-stack">
         <div className="container">
-            <h2 className="font-playfair text-4xl font-clash-regular split-text line-height-base"><span className="text-4xl font-clash-bold accent-100 line-height-base">T</span>ECH STACK</h2>
+            <AnimatedTitle>TECH STACK</AnimatedTitle>
             <hr />
             <div className="tech-stack-list">
                 <div className="tech-stack-item">

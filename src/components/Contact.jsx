@@ -1,10 +1,11 @@
-import React from 'react'
+import AnimatedTitle from './AnimatedTitle';
 
 const Contact = () => {
+
   return (
     <section id="contact" className="contact">
         <div className="container">
-            <h2 className="font-playfair text-4xl font-clash-regular split-text line-height-base"><span className="text-4xl font-clash-bold accent-100 line-height-base">C</span>ONTACT</h2>
+            <AnimatedTitle>CONTACT</AnimatedTitle>
             <hr />
             <p className="text-lg font-clash-regular">Reach out and let’s make something awesome together.</p>
             <form>

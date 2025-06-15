@@ -3,7 +3,7 @@ import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
-import { Lenis } from '@studio-freight/lenis';
+// import { Lenis } from '@studio-freight/lenis';
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger, SplitText, useGSAP);
@@ -88,9 +88,8 @@ export const useHRAnimation = (scope, dependencies = []) => {
   const containerRef = useRef(null);
 
   useGSAP(() => {
-    const elements = containerRef.current?.querySelectorAll('hr') || [];
-    
-    document.fonts.ready.then(() => {
+    const elements = containerRef.current?.querySelectorAll('.lineHr') || [];
+    console.log(elements);
       elements.forEach((element) => {
         // Set initial state
         gsap.set(element, {
@@ -114,7 +113,6 @@ export const useHRAnimation = (scope, dependencies = []) => {
           opacity: 1
         });
       });
-    });
   }, { scope: containerRef, dependencies });
 
   return containerRef;

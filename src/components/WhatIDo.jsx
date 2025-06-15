@@ -1,16 +1,16 @@
-import React from 'react'
 import websiteDevelopmentIcon from '../assets/website-development-icon.svg';
 import bugFixesIcon from '../assets/bug-fixes-icon.svg';
 import websiteMaintenanceIcon from '../assets/website-maintenance-icon.svg';
 import uiUxDesignIcon from '../assets/ui-ux-design-icon.svg';
 import consultationIcon from '../assets/consultation-icon.svg';
-
+import AnimatedTitle from './AnimatedTitle';
 
 const WhatIDo = () => {
+
   return (
     <section id="what-i-do" className="what-i-do">
         <div className="container">
-            <h2 className="font-playfair text-4xl font-clash-regular split-text line-height-base"><span className="text-4xl font-clash-bold accent-100 line-height-base">W</span>HAT I DO</h2>
+            <AnimatedTitle>WHAT I DO</AnimatedTitle>
             <hr />
             <div className="what-i-do-list">
                 <div className="what-i-do-item">

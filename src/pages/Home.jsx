@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero';
@@ -10,6 +9,7 @@ import Blog from '../components/Blog';
 import Contact from '../components/Contact';
 
 const Home = () => {
+
   return (
     <div>
         <Header />

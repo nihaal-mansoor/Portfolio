@@ -1,11 +1,12 @@
-import React from 'react'
+import AnimatedTitle from './AnimatedTitle';
 
 const Work = () => {
+
   return (
     <section id="work" className="work">
         <div className="container">
-            <h2 className="font-playfair text-4xl font-clash-regular split-text line-height-base"><span className="text-4xl font-clash-bold accent-100 line-height-base">W</span>ORK</h2>
-            <hr />
+            <AnimatedTitle>WORK</AnimatedTitle>
+            <hr className="lineHr" />
             <div className="job-list">
                 <h3 className="text-base font-clash-medium">Dex AI Solutions LLC – Front-End Developer</h3>
                 <div>

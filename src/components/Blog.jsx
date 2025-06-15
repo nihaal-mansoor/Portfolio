@@ -1,12 +1,12 @@
-import React from 'react'
 import blogImage1 from '../assets/cursor-vs-vscode.png';
-
+import AnimatedTitle from './AnimatedTitle';
 
 const Blog = () => {
+
   return (
     <section id="blog" className="blog">
         <div className="container">
-            <h2 className="font-playfair text-4xl font-clash-regular split-text line-height-base"><span className="text-4xl font-clash-bold accent-100 line-height-base">B</span>LOG</h2>
+            <AnimatedTitle>BLOG</AnimatedTitle>
             <hr />
             <div className="blog-list">
                 <div className="blog-list-item">
