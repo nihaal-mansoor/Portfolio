@@ -13,7 +13,7 @@
 /* CSS Variables */
 :root {
 	--accent-100: #ff4d4d;
-	--text-100: #ffffff;
+	--text-100: #e7e7e7;
 	--bg-100: #141721;
 	--bg-form: #151721;
 	--button-bg: var(--accent-100);
@@ -96,6 +96,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: var(--container-gap);
+	margin: auto;
 }
 
 .d-flex {

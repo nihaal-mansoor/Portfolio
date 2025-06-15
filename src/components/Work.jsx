@@ -9,7 +9,7 @@ const Work = () => {
             <AnimatedTitle>WORK</AnimatedTitle>
             <AnimatedHR />
             <div className="job-list">
-                <h3 className="text-base font-clash-medium">Dex AI Solutions LLC – Front-End Developer</h3>
+                <h3 className="text-base font-clash-medium">Dex AI Solutions LLC</h3>
                 <div>
                     <div className="job-list-item">
                         <p className="font-clash-medium">Position:</p>
@@ -32,15 +32,15 @@ const Work = () => {
                 </div>
             </div>
             <div className="job-list">
-                <h3 className="text-base font-clash-medium">Precise Communicaitons LLC</h3>
+                <h3 className="text-base font-clash-medium">Precise Communications Design LLC</h3>
                 <div>
                     <div className="job-list-item">
                         <p className="font-clash-medium">Position:</p>
-                        <p className="font-clash-regular">Front-End Developer</p>
+                        <p className="font-clash-regular">PHP Developer</p>
                     </div>
                     <div className="job-list-item">
                         <p className="font-clash-medium">Duration:</p>
-                        <p className="font-clash-regular">2024 - Present</p>
+                        <p className="font-clash-regular">January 2021 - February 2023</p>
                     </div>
                     <div className="job-list-item">
                         <p className="font-clash-medium">Location:</p>
@@ -60,11 +60,11 @@ const Work = () => {
                 <div>
                     <div className="job-list-item">
                         <p className="font-clash-medium">Position:</p>
-                        <p className="font-clash-regular">Front-End Developer</p>
+                        <p className="font-clash-regular">Office Admin/Web Developer</p>
                     </div>
                     <div className="job-list-item">
                         <p className="font-clash-medium">Duration:</p>
-                        <p className="font-clash-regular">2024 - Present</p>
+                        <p className="font-clash-regular">January 2019 – October 2019</p>
                     </div>
                     <div className="job-list-item">
                         <p className="font-clash-medium">Location:</p>

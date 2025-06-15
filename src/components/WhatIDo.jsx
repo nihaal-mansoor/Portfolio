@@ -17,28 +17,27 @@ const WhatIDo = () => {
                 <div className="what-i-do-item">
                     <img src={ websiteDevelopmentIcon } alt="WordPress" width="30" height="30" />
                     <h3 className="text-base font-clash-medium">Website Development</h3>
-                    <p className="font-clash-regular">Custom WordPress websites or React websites tailored to your brand and goals.</p>
+                    <p className="font-clash-regular">Ready to bring your brand to life online? Let’s create something that works beautifully across all devices and speaks to your audience.</p>
                 </div>
                 <div className="what-i-do-item">
                     <img src={ bugFixesIcon } alt="Bug" width="30" height="30" />
                     <h3 className="text-base font-clash-medium">Bug Fixes</h3>
-                    <p className="font-clash-regular">Quick and efficient bug fixes to keep your website running smoothly.</p>
+                    <p className="font-clash-regular">Site acting up or something broken? I specialize in identifying and fixing front-end issues quickly and cleanly.</p>
                 </div>
                 <div className="what-i-do-item">
                     <img src={ websiteMaintenanceIcon } alt="Maintenance" width="30" height="30" />
                     <h3 className="text-base font-clash-medium">Website Maintenance</h3>
-                    <p className="font-clash-regular">Regular updates and maintenance to keep your website running smoothly.</p>
+                    <p className="font-clash-regular">Looking for regular updates and ongoing care to ensure your website always performs its best?</p>
                 </div>
                 <div className="what-i-do-item">
                     <img src={ uiUxDesignIcon } alt="Design" width="30" height="30" />
                     <h3 className="text-base font-clash-medium">UI/UX Design (Figma)</h3>
-                    <p className="font-clash-regular">Custom UI/UX design for your website to enhance user experience.</p>
+                    <p className="font-clash-regular">Want a design that’s both beautiful and user-friendly? Using Figma, I create modern, intuitive UI/UX designs for you.</p>
                 </div>
                 <div className="what-i-do-item">
                     <img src={ consultationIcon } alt="Consultation" width="30" height="30" />
                     <h3 className="text-base font-clash-medium">Consultation</h3>
-                    <p className="font-clash-regular">Consultation to help you understand your needs and help you create a website that meets your
-                        goals.</p>
+                    <p className="font-clash-regular">Let’s chat. I offer one-on-one consultations to guide you on strategy, tools, design direction, or development workflows.</p>
                 </div>
             </div>
         </div>

@@ -6,6 +6,7 @@ import jsIcon from '../assets/js-icon.svg';
 import woocommerceIcon from '../assets/woocommerce-icon.svg';
 import laravelIcon from '../assets/laravel-icon.svg';
 import reactIcon from '../assets/react-icon.svg';
+import gsapIcon from '../assets/gsap-icon.svg';
 import AnimatedTitle from './AnimatedTitle';
 import AnimatedHR from './AnimatedHR';
 
@@ -39,8 +40,9 @@ const TechStack = () => {
                     <div className="tech-stack-item-icons">
                         <img src={ laravelIcon } alt="Laravel" width="30" height="30" />
                         <img src={ reactIcon } alt="React" width="30" height="30" />
+                        <img src={ gsapIcon } alt="React" width="30" height="30" />
                     </div>
-                    <h3 className="text-base font-clash-medium">Laravel,React</h3>
+                    <h3 className="text-base font-clash-medium">Laravel, React, GSAP</h3>
                     <p className="font-clash-regular">Basic</p>
                 </div>
             </div>

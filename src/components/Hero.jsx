@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
       </div>
       <div className="ticker-wrapper">
-          <p className="ticker-text">Crafting clean, functional websites with 5+ years of experience.</p>
+          <p className="ticker-text">Crafting clean, functional websites with 4+ years of experience.</p>
       </div>
     </section>
   )
