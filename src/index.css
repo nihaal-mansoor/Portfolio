@@ -77,16 +77,14 @@ a {
 
 /* Base Styles */
 body {
-	font-family: var(--font-clash-variable);
-	border: solid 1px var(--text-100);
-	background: var(--bg-100);
-	color: var(--text-100);
-	background-image: radial-gradient(
-		rgba(255, 255, 255, 0.1) 1px,
-		transparent 1px
-	);
-	background-size: 25px 25px;
-	background-attachment: fixed;
+   font-family: var(--font-clash-variable);
+   border: solid 1px var(--text-100);
+   background: #141721;
+   color: var(--text-100);
+   /* background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); */
+   /* background-size: 25px 25px; */
+   background-attachment: fixed;
+   background-image: url(../public/500-50-5.png);
 }
 
 /* Layout */
@@ -105,6 +103,18 @@ body {
 
 .p-px {
 	padding: 0 10px;
+}
+
+.pb-60-py {
+   padding: 0 0 60px 0;
+}
+
+.position-relative {
+   position: relative;
+}
+
+.position-absolute {
+   position: absolute;
 }
 
 /* Typography */
@@ -229,7 +239,13 @@ accent {
 	padding: 1rem 2rem;
 	position: sticky;
 	top: 0;
-	z-index: 1000;
+	z-index: 10;
+
+	background: rgba(16, 16, 26, 0.7);
+	backdrop-filter: saturate(180%) blur(10px);
+	-webkit-backdrop-filter: saturate(180%) blur(10px);
+	box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
+	border-left: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .nav-logo {
@@ -482,7 +498,7 @@ form button:hover {
 	flex-direction: column;
 	gap: 10px;
 	flex: 1;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .blog-list-item img {
@@ -503,6 +519,10 @@ form button:hover {
 	display: flex;
 	gap: 10px;
 	align-items: center;
+   position: absolute;
+   bottom: 12px;
+   left: 12px;
+   z-index: 10;
 }
 
 /* Footer */
@@ -536,8 +556,9 @@ footer p {
 	.job-list > div:last-child {
 		grid-column: 1 / -1;
 	}
-
-
+	h1, h2 {
+		z-index: -1;
+	}
 }
 
 @media (max-width: 768px) {
@@ -598,3 +619,20 @@ footer p {
 		min-width: 100%;
 	}
 }
+
+
+/* Blog Section */
+
+
+
+.image-gradient {
+   position: absolute;
+   background: linear-gradient(180deg,rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.8) 95%, rgba(20, 23, 33, 1) 100%);
+   top: 0;
+   left: 0;
+}
+
+.gradient-mask {
+   -webkit-mask-image: linear-gradient(to top, transparent 0%, black 100%);
+   mask-image: linear-gradient(to top, transparent 0%, black 100%);
+ }

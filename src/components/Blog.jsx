@@ -1,46 +1,54 @@
-import blogImage1 from '../assets/cursor-vs-vscode.png';
-import AnimatedTitle from './AnimatedTitle';
-import AnimatedHR from './AnimatedHR';
+import blogImage1 from "../assets/cursor-vs-vscode.png";
+import AnimatedTitle from "./AnimatedTitle";
+import AnimatedHR from "./AnimatedHR";
+
+import { Link } from "react-router-dom";
+
+import { blogPosts } from "../data/BlogData";
 
 const Blog = () => {
+	return (
+		<section id="blog" className="blog">
+			<div className="container">
+				<AnimatedTitle>BLOG</AnimatedTitle>
+				<AnimatedHR />
+				<div className="blog-list">
+					{blogPosts.map((post) => (
+						<div className="blog-list-item">
+							<div key={post.id} className="blog-list-item">
+								<div className="position-relative">
+									<img
+										src={post.image}
+										alt={post.title}
+										width="200"
+										height="250"
+										className="gradient-mask"
+									/>
+									<div className="blog-list-item-meta">
+										<p className="text-base font-clash-extralight mb-0 d-inline">
+											{new Date(post.publishDate).toLocaleDateString()}
+										</p>
+										<span className="mx-2">|</span>
+										<p className="text-base font-clash-extralight mb-0 d-inline">
+											{post.readTime}
+										</p>
+									</div>
+								</div>
 
-  return (
-    <section id="blog" className="blog">
-        <div className="container">
-            <AnimatedTitle>BLOG</AnimatedTitle>
-            <AnimatedHR />
-            <div className="blog-list">
-                <div className="blog-list-item">
-                    <img src={ blogImage1 } alt="Blog 1" width="200" height="250" />
-                    <div className="blog-list-item-meta">
-                        <p className="text-base font-clash-extralight">08 June 2025</p> |
-                        <p className="text-base font-clash-extralight">8 min read</p>
-                    </div>
-                    <h3 className="text-base font-clash-medium">Switching from VS Code to Cursor: What I Learned</h3>
-                    <a className="text-base font-clash-regular fit-content" href="#">Read More</a>
-                </div>
-                <div className="blog-list-item">
-                    <img src={ blogImage1 } alt="Blog 2" width="200" height="250" />
-                    <div className="blog-list-item-meta">
-                        <p className="text-base font-clash-extralight">08 June 2025</p> |
-                        <p className="text-base font-clash-extralight">8 min read</p>
-                    </div>
-                    <h3 className="text-base font-clash-medium">How to create a WordPress website</h3>
-                    <a className="text-base font-clash-regular fit-content" href="#">Read More</a>
-                </div>
-                <div className="blog-list-item">
-                    <img src={ blogImage1 } alt="Blog 2" width="200" height="250" />
-                    <div className="blog-list-item-meta">
-                        <p className="text-base font-clash-extralight">08 June 2025</p> |
-                        <p className="text-base font-clash-extralight">8 min read</p>
-                    </div>
-                    <h3 className="text-base font-clash-medium">How to create a WordPress website</h3>
-                    <a className="text-base font-clash-regular fit-content" href="#">Read More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-  )
-}
+								<Link to={`/blog/${post.slug}`} className="text-base font-clash-medium">
+									{post.title}
+								</Link>
+							</div>
 
-export default Blog
+							<Link to={`/blog/${post.slug}`} className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+								Read More
+							</Link>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+	);
+};
+
+export default Blog;

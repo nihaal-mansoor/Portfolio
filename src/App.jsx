@@ -2,10 +2,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home  from './pages/Home'
 import PageNotFound from './pages/404'
+import BlogPost from './pages/BlogPost'
 
-import React, { useEffect, useRef } from 'react';
+// import React, { useEffect, useRef } from 'react';
 // import Lenis from '@studio-freight/lenis';
-import { ReactLenis, useLenis } from 'lenis/react';
+// import { ReactLenis, useLenis } from 'lenis/react';
 
 // import gsap from 'gsap';
 // import { useGSAP } from '@gsap/react';
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
