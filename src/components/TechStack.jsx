@@ -7,15 +7,15 @@ import woocommerceIcon from "../assets/woocommerce-icon.svg";
 import laravelIcon from "../assets/laravel-icon.svg";
 import reactIcon from "../assets/react-icon.svg";
 import gsapIcon from "../assets/gsap-icon.svg";
-import AnimatedTitle from "./AnimatedTitle";
+// import AnimatedTitle from "./AnimatedTitle";
 import AnimatedHR from "./AnimatedHR";
+import Copy from './Copy';
 
 const TechStack = () => {
 	return (
 		<section id="tech" className="tech-stack">
 			<div className="container">
-				<AnimatedTitle>TECH STACK</AnimatedTitle>
-				<AnimatedHR />
+				<Copy><h2 className="font-playfair text-4xl font-clash-regular line-height-base split-text"><span className="text-4xl font-clash-bold accent-100">T</span>ECH STACK</h2></Copy>
 				<div className="tech-stack-list">
 					<div className="tech-stack-item">
 						<div className="tech-stack-item-icons">

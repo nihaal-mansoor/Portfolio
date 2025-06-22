@@ -7,20 +7,23 @@ import WhatIDo from '../components/WhatIDo';
 import Work from '../components/Work';
 import Blog from '../components/Blog';
 import Contact from '../components/Contact';
+import { ReactLenis } from 'lenis/react';
 
 const Home = () => {
 
   return (
     <div>
+      <ReactLenis root>
         <Header />
         <Hero />
-        <About />
-        <TechStack />
         <WhatIDo />
+        <About />
         <Work />
+        <TechStack />
         <Blog />
         <Contact />
         <Footer />
+      </ReactLenis>
     </div>
   )
 }

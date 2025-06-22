@@ -1,6 +1,7 @@
 import blogImage1 from "../assets/cursor-vs-vscode.png";
 import AnimatedTitle from "./AnimatedTitle";
 import AnimatedHR from "./AnimatedHR";
+import Copy from './Copy';
 
 import { Link } from "react-router-dom";
 
@@ -10,8 +11,7 @@ const Blog = () => {
 	return (
 		<section id="blog" className="blog">
 			<div className="container">
-				<AnimatedTitle>BLOG</AnimatedTitle>
-				<AnimatedHR />
+				<Copy><h2 className="font-playfair text-4xl font-clash-regular line-height-base split-text"><span className="text-4xl font-clash-bold accent-100">B</span>LOG</h2></Copy>
 				<div className="blog-list">
 					{blogPosts.map((post) => (
 						<div className="blog-list-item">

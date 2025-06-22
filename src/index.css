@@ -1,6 +1,7 @@
+/* IMPORTS */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-/* Font Faces */
+/* FONT FACES */
 @font-face {
 	font-family: "Clash Display Variable";
 	src: url("./fonts/ClashDisplay-Variable.woff2") format("woff2-variations"),
@@ -10,17 +11,18 @@
 	font-display: swap;
 }
 
-/* CSS Variables */
+/* CSS VARIABLES */
 :root {
+	/* Colors */
 	--accent-100: #ff4d4d;
-	--text-100: #e7e7e7;
+	--text-100: #D4D4D4;
 	--bg-100: #141721;
 	--bg-form: #151721;
 	--button-bg: var(--accent-100);
 	--button-text: var(--text-100);
 	--border: var(--text-100);
 
-	/* Typography variables */
+	/* Typography Variables */
 	--font-clash-variable: "Clash Display Variable", sans-serif;
 	--font-playfair: "Playfair Display", serif;
 
@@ -34,7 +36,15 @@
 	--text-3xl: clamp(48px, 8vw, 64px);
 	--text-4xl: clamp(35px, 8vw, 65px);
 	--text-5xl: clamp(40px, 9vw, 150px);
-	--text-6xl: clamp(60px, 13vw, 200px);
+	--text-6xl: clamp(60px, 10vw, 100px);
+
+	/* Font Weight */
+	--font-extralight: 200;
+	--font-light: 300;
+	--font-regular: 400;
+	--font-medium: 500;
+	--font-semibold: 600;
+	--font-bold: 700;
 
 	/* Spacing Scale */
 	--space-xs: 10px;
@@ -48,17 +58,9 @@
 	--container-padding-inline: clamp(var(--space-xs), 5vw, var(--space-lg));
 	--container-padding-block: var(--space-lg);
 	--container-gap: var(--space-lg);
-
-	/* Font Weight */
-	--font-extralight: 200;
-	--font-light: 300;
-	--font-regular: 400;
-	--font-medium: 500;
-	--font-semibold: 600;
-	--font-bold: 700;
 }
 
-/* Reset */
+/* RESET */
 *,
 *::before,
 *::after {
@@ -75,19 +77,23 @@ a {
 	text-decoration: none;
 }
 
-/* Base Styles */
+/* BASE STYLES */
 body {
-   font-family: var(--font-clash-variable);
-   border: solid 1px var(--text-100);
-   background: #141721;
-   color: var(--text-100);
-   /* background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); */
-   /* background-size: 25px 25px; */
-   background-attachment: fixed;
-   background-image: url(../public/500-50-5.png);
+	font-family: var(--font-clash-variable);
+	border: solid 1px var(--text-100);
+	background: #141721;
+	color: var(--text-100);
+	/* background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); */
+	/* background-size: 25px 25px; */
+	background-attachment: fixed;
+	background-image: url(../public/500-50-5.png);
 }
 
-/* Layout */
+hr {
+	border: 0.5px solid var(--text-100);
+}
+
+/* LAYOUT UTILITIES */
 .container {
 	max-width: var(--container-max-width);
 	padding: var(--space-lg) var(--container-padding-inline);
@@ -101,74 +107,29 @@ body {
 	display: flex;
 }
 
+.position-relative {
+	position: relative;
+}
+
+.position-absolute {
+	position: absolute;
+}
+
+.fit-content {
+	width: fit-content;
+}
+
+/* SPACING UTILITIES */
 .p-px {
 	padding: 0 10px;
 }
 
 .pb-60-py {
-   padding: 0 0 60px 0;
+	padding: 0 0 60px 0;
 }
 
-.position-relative {
-   position: relative;
-}
-
-.position-absolute {
-   position: absolute;
-}
-
-/* Typography */
-.font-clash-extralight {
-	font-weight: var(--font-extralight);
-}
-.font-clash-light {
-	font-weight: var(--font-light);
-}
-.font-clash-regular {
-	font-weight: var(--font-regular);
-}
-.font-clash-medium {
-	font-weight: var(--font-medium);
-}
-.font-clash-semibold {
-	font-weight: var(--font-semibold);
-}
-.font-clash-bold {
-	font-weight: var(--font-bold);
-}
-
-/* Utility Classes for Font Sizes */
-.text-xs {
-	font-size: var(--text-xs);
-}
-.text-sm {
-	font-size: var(--text-sm);
-}
-.text-base {
-	font-size: var(--text-base);
-}
-.text-lg {
-	font-size: var(--text-lg);
-}
-.text-xl {
-	font-size: var(--text-xl);
-}
-.text-2xl {
-	font-size: var(--text-2xl);
-}
-.text-3xl {
-	font-size: var(--text-3xl);
-}
-.text-4xl {
-	font-size: var(--text-4xl);
-}
-.text-5xl {
-	font-size: var(--text-5xl);
-}
-.text-6xl {
-	font-size: var(--text-6xl);
-}
-
+/* TYPOGRAPHY */
+/* Font Families */
 .font-clash {
 	font-family: var(--font-clash-variable), sans-serif;
 }
@@ -177,14 +138,101 @@ body {
 	font-family: "Playfair Display", serif;
 }
 
-.fit-content {
-	width: fit-content;
+/* Font Weights */
+.font-clash-extralight {
+	font-weight: var(--font-extralight);
 }
 
-hr {
-	border: 0.5px solid var(--text-100);
+.font-clash-light {
+	font-weight: var(--font-light);
 }
 
+.font-clash-regular {
+	font-weight: var(--font-regular);
+}
+
+.font-clash-medium {
+	font-weight: var(--font-medium);
+}
+
+.font-clash-semibold {
+	font-weight: var(--font-semibold);
+}
+
+.font-clash-bold {
+	font-weight: var(--font-bold);
+}
+
+/* Font Sizes */
+.text-xs {
+	font-size: var(--text-xs);
+}
+
+.text-sm {
+	font-size: var(--text-sm);
+}
+
+.text-base {
+	font-size: var(--text-base);
+}
+
+.text-lg {
+	font-size: var(--text-lg);
+}
+
+.text-xl {
+	font-size: var(--text-xl);
+}
+
+.text-2xl {
+	font-size: var(--text-2xl);
+}
+
+.text-3xl {
+	font-size: var(--text-3xl);
+}
+
+.text-4xl {
+	font-size: var(--text-4xl);
+}
+
+.text-5xl {
+	font-size: var(--text-5xl);
+}
+
+.text-6xl {
+	font-size: var(--text-6xl);
+}
+
+/* Typography Styling */
+.line-height-base {
+	line-height: 1;
+}
+
+p,
+accent {
+	letter-spacing: 0.05em;
+	line-height: 1.6;
+	word-spacing: 0.3em;
+	color: var(--text-100);
+	margin: 0;
+}
+
+/* COLORS */
+.accent-100 {
+	color: var(--accent-100);
+}
+
+/* BORDERS */
+.border-bottom {
+	border-bottom: solid 1px var(--border);
+}
+
+.border-top {
+	border-top: solid 1px var(--border);
+}
+
+/* LINKS */
 a {
 	background: linear-gradient(
 		to right,
@@ -204,31 +252,6 @@ a {
 
 a:hover {
 	background-position: 0%;
-}
-
-p,
-accent {
-	letter-spacing: 0.05em;
-	line-height: 1.6;
-	word-spacing: 0.3em;
-	color: var(--text-100);
-	margin: 0;
-}
-
-.accent-100 {
-	color: var(--accent-100);
-}
-
-.line-height-base {
-	line-height: 1;
-}
-
-.border-bottom {
-	border-bottom: solid 1px var(--border);
-}
-
-.border-top {
-	border-top: solid 1px var(--border);
 }
 
 /* Navigation */
@@ -258,10 +281,9 @@ accent {
 }
 
 .hire-button {
-	background-color: var(--button-bg);
+	background: var(--button-bg);
 	color: var(--button-text);
 	padding: 0.5rem 1rem;
-	border-radius: 5px;
 }
 
 .hire-button a {
@@ -284,7 +306,7 @@ accent {
 	height: 80vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
 	min-height: 500px;
 }
 
@@ -519,10 +541,10 @@ form button:hover {
 	display: flex;
 	gap: 10px;
 	align-items: center;
-   position: absolute;
-   bottom: 12px;
-   left: 12px;
-   z-index: 10;
+	position: absolute;
+	bottom: 12px;
+	left: 12px;
+	z-index: 10;
 }
 
 /* Footer */
@@ -544,11 +566,11 @@ footer p {
 }
 
 /* Media Queries */
-@media (max-width: 1024px) {	
+@media (max-width: 1024px) {
 	#hero .container {
 		justify-content: center;
 	}
-	
+
 	.job-list {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -556,7 +578,8 @@ footer p {
 	.job-list > div:last-child {
 		grid-column: 1 / -1;
 	}
-	h1, h2 {
+	h1,
+	h2 {
 		z-index: -1;
 	}
 }
@@ -565,7 +588,7 @@ footer p {
 	#hero .container {
 		justify-content: center;
 	}
-	
+
 	.nav-toggle {
 		display: block;
 	}
@@ -620,19 +643,53 @@ footer p {
 	}
 }
 
-
 /* Blog Section */
 
-
-
 .image-gradient {
-   position: absolute;
-   background: linear-gradient(180deg,rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.8) 95%, rgba(20, 23, 33, 1) 100%);
-   top: 0;
-   left: 0;
+	position: absolute;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0) 70%,
+		rgba(0, 0, 0, 0.8) 95%,
+		rgba(20, 23, 33, 1) 100%
+	);
+	top: 0;
+	left: 0;
 }
 
 .gradient-mask {
-   -webkit-mask-image: linear-gradient(to top, transparent 0%, black 100%);
-   mask-image: linear-gradient(to top, transparent 0%, black 100%);
+	-webkit-mask-image: linear-gradient(to top, transparent 0%, black 100%);
+	mask-image: linear-gradient(to top, transparent 0%, black 100%);
+}
+
+
+/* Remove below Testing */
+.blog-item-inner::after {
+   content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: var(--accent-100);
+    opacity: 0.8;
+    mix-blend-mode: lighten;
+    -webkit-transition: all 0.75s cubic-bezier(.43, .195, .02, 1);
+    transition: all 0.75s cubic-bezier(.43, .195, .02, 1);
+}
+
+.blog-item-inner {
+   overflow: hidden;
+   height: auto;
+   /* border-radius: 30px; */
+   aspect-ratio: 2 / 1;
+   margin-bottom: 1em;
+   position: relative;
+   width: 100%;
+}
+
+.img-wrapper:hover::after {
+   display: none;
  }

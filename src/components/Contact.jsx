@@ -1,14 +1,13 @@
 import AnimatedTitle from './AnimatedTitle';
 import AnimatedHR from './AnimatedHR';
+import Copy from './Copy';
 
 const Contact = () => {
 
   return (
     <section id="contact" className="contact">
         <div className="container">
-            <AnimatedTitle>CONTACT</AnimatedTitle>
-            <AnimatedHR />
-            <p className="text-lg font-clash-regular">Reach out and let’s make something awesome together.</p>
+            <Copy><h2 className="font-playfair text-4xl font-clash-regular line-height-base split-text"><span className="text-4xl font-clash-bold accent-100">C</span>ONTACT</h2></Copy><p className="text-lg font-clash-regular">Reach out and let’s make something awesome together.</p>
             <form>
                 <div className="form-row">
                     <input className="text-lg font-clash-regular" type="text" placeholder="Your name" />
