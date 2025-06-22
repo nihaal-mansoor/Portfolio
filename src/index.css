@@ -36,7 +36,7 @@
 	--text-3xl: clamp(48px, 8vw, 64px);
 	--text-4xl: clamp(35px, 8vw, 65px);
 	--text-5xl: clamp(40px, 9vw, 150px);
-	--text-6xl: clamp(60px, 10vw, 100px);
+	--text-6xl: clamp(50px, 10vw, 100px);
 
 	/* Font Weight */
 	--font-extralight: 200;
