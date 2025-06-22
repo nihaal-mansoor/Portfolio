@@ -42,12 +42,22 @@ const Copy = ({ children, animateOnScroll = true, delay = 0 }) => {
          const computedStyle = window.getComputedStyle(element);
          const textIndent = computedStyle.textIndent;
 
-         if (textIndent && textIndent === "0px") {
+         // if (textIndent && textIndent === "0px") {
+         //    if (split.lines.length > 0) {
+         //       split.lines[0].computedStyleMap.paddingLeft = textIndent;
+         //    }
+         //    element.style.textIndent = "0";
+         // }
+
+         if (textIndent && textIndent !== "0px" && textIndent !== "none") {
             if (split.lines.length > 0) {
-               split.lines[0].computedStyleMap.paddingLeft = textIndent;
+                split.lines[0].style.paddingLeft = textIndent;
             }
             element.style.textIndent = "0";
-         }
+        }
+
+
+
 
          lines.current.push(...split.lines);
       });

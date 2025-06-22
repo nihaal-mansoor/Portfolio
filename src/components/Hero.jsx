@@ -12,7 +12,7 @@ const Hero = () => {
           {/* <Copy><h1 className="text-6xl font-clash font-clash-extralight split-text">
               HI, I'M <span className="text-6xl font-clash font-clash-semibold split-text">NIHAAL</span>
           </h1></Copy> */}
-          <Copy><h1 className="text-6xl font-clash font-clash-extralight split-text">Hi, I am Nihaal <br/><span className="text-6xl font-clash font-clash-semibold split-text accent-100">Front-End Developer</span><br/> Focused on Creating Seamless Digital Experiences</h1></Copy>
+          <Copy delay={0.5}><h1 className="text-6xl font-clash font-clash-extralight split-text">Hi, I am Nihaal <br/><span className="text-6xl font-clash font-clash-semibold split-text accent-100">Front-End Developer</span><br/> Focused on Creating Seamless Digital Experiences</h1></Copy>
           <div className="d-flex">
             {/* <Copy><h2 className="text-5xl font-playfair font-clash-light sub-heading_1 split-text">Front-End 
                 <span className="text-5xl font-playfair font-clash-bold sub-heading_1 hover_effect split-text">WordPress</span>

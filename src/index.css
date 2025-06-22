@@ -636,6 +636,7 @@ footer p {
 
 	.blog-list {
 		flex-direction: column;
+      gap: 50px;
 	}
 
 	.blog-list-item {
