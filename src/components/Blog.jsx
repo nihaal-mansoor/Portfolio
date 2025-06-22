@@ -13,8 +13,8 @@ const Blog = () => {
 			<div className="container">
 				<Copy><h2 className="font-playfair text-4xl font-clash-regular line-height-base split-text"><span className="text-4xl font-clash-bold accent-100">B</span>LOG</h2></Copy>
 				<div className="blog-list">
-					{blogPosts.map((post) => (
-						<div className="blog-list-item">
+					{blogPosts.map((post, index) => (
+						<div key={index} className="blog-list-item">
 							<div key={post.id} className="blog-list-item">
 								<div className="position-relative">
 									<img
