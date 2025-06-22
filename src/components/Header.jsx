@@ -106,7 +106,7 @@ const Header = () => {
 					</p>
 					<p className="text-xs font-clash-regular">
 						Say Hi, <br />
-						nihaal@dexaisolutions.com
+						nihaal.mansoor@outlook.com
 					</p>
 				</div>
 				
