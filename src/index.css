@@ -83,10 +83,14 @@ body {
 	border: solid 1px var(--text-100);
 	background: #141721;
 	color: var(--text-100);
-	/* background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); */
-	/* background-size: 25px 25px; */
 	background-attachment: fixed;
 	background-image: url(../public/500-50-5.png);
+}
+
+@media (max-width: 768px) {
+   body {
+     background-attachment: scroll; /* fallback for mobile */
+   }
 }
 
 hr {
