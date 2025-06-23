@@ -33,7 +33,7 @@
 	--text-lg: clamp(18px, 4vw, 24px);
 	--text-xl: clamp(24px, 5vw, 32px);
 	--text-2xl: clamp(32px, 6vw, 48px);
-	--text-3xl: clamp(48px, 8vw, 64px);
+	--text-3xl: clamp(25px, 6vw, 48px);
 	--text-4xl: clamp(35px, 8vw, 65px);
 	--text-5xl: clamp(40px, 9vw, 150px);
 	--text-6xl: clamp(50px, 10vw, 100px);
@@ -547,24 +547,6 @@ form button:hover {
 	z-index: 10;
 }
 
-/* Footer */
-footer {
-	flex-direction: column;
-	gap: 10px;
-	text-align: center;
-	color: var(--text-100);
-	padding: 15px 0;
-}
-
-footer .social-links {
-	gap: 30px;
-	justify-content: center;
-}
-
-footer p {
-	font-size: 14px;
-}
-
 /* Media Queries */
 @media (max-width: 1024px) {
 	#hero .container {
@@ -664,33 +646,26 @@ footer p {
 }
 
 
-/* Remove below Testing */
-.blog-item-inner::after {
-   content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background-color: var(--accent-100);
-    opacity: 0.8;
-    mix-blend-mode: lighten;
-    -webkit-transition: all 0.75s cubic-bezier(.43, .195, .02, 1);
-    transition: all 0.75s cubic-bezier(.43, .195, .02, 1);
+/* Footer */
+footer {
+	flex-direction: column;
+	gap: 10px;
+	text-align: center;
+	color: var(--text-100);
+	padding: 15px 0;
 }
 
-.blog-item-inner {
-   overflow: hidden;
-   height: auto;
-   /* border-radius: 30px; */
-   aspect-ratio: 2 / 1;
-   margin-bottom: 1em;
-   position: relative;
-   width: 100%;
+footer .social-links {
+	gap: 30px;
+	justify-content: center;
 }
 
-.img-wrapper:hover::after {
-   display: none;
- }
+footer p {
+	font-size: 14px;
+}
+
+.f-container {
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 40px;
+}

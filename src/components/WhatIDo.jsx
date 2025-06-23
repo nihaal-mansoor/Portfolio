@@ -4,7 +4,7 @@ import websiteMaintenanceIcon from "../assets/website-maintenance-icon.svg";
 import uiUxDesignIcon from "../assets/ui-ux-design-icon.svg";
 import consultationIcon from "../assets/consultation-icon.svg";
 // import AnimatedTitle from "./AnimatedTitle";
-import AnimatedHR from "./AnimatedHR";
+// import AnimatedHR from "./AnimatedHR";
 import Copy from './Copy';
 
 const WhatIDo = () => {

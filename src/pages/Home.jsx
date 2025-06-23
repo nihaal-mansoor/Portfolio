@@ -20,8 +20,8 @@ const Home = () => {
         <About />
         <Work />
         <TechStack />
-        <Blog />
-        <Contact />
+        {/* <Blog /> */}
+        {/* <Contact /> */}
         <Footer />
       </ReactLenis>
     </div>
