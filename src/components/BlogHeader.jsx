@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./header.module.css";
-import { useNavigate } from 'react-router-dom';
 import DDT from "./DDT"
 
 const BlogHeader = () => {

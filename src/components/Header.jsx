@@ -47,10 +47,7 @@ const Header = () => {
 
 	return (
 		<header>
-			<nav
-				ref={navbarRef}
-				className={`${styles.navbar} ${isNavActive ? styles['nav-active'] : ''}`}
-			>
+			<nav ref={navbarRef} className={`${styles.navbar} ${isNavActive ? styles['nav-active'] : ''}`}>
 				<div className="nav-logo d-flex">
 					<p className="text-xs font-clash-regular">
 						Based in <br />
