@@ -20,7 +20,6 @@ const Home = () => {
          <Work />
          <TechStack />
          <Blog />
-         {/* <Contact /> */}
          <Footer />
          </ReactLenis>
       </div>

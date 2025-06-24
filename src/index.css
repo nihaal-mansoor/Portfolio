@@ -339,6 +339,9 @@ a:hover {
 
 /* Hero Typography */
 
+#hero span{
+   font-style: italic;
+}
 #hero h2.sub-heading_1:hover {
 	font-style: normal;
 	padding-right: clamp(0px, 5vw, var(--space-sm));
