@@ -1,10 +1,5 @@
-import blogImage1 from "../assets/cursor-vs-vscode.png";
-import AnimatedTitle from "./AnimatedTitle";
-import AnimatedHR from "./AnimatedHR";
 import Copy from './Copy';
-
 import { Link } from "react-router-dom";
-
 import { blogPosts } from "../data/BlogData";
 
 const Blog = () => {
@@ -14,8 +9,7 @@ const Blog = () => {
 				<Copy><h2 className="font-playfair text-4xl font-clash-regular line-height-base split-text"><span className="text-4xl font-clash-bold accent-100">B</span>LOG</h2></Copy>
 				<div className="blog-list">
 					{blogPosts.map((post, index) => (
-						<div key={index} className="blog-list-item">
-							<div key={post.id} className="blog-list-item">
+						<div key={post.id || post.slug} className="blog-list-item">
 								<div className="position-relative">
 									<img
 										src={post.image}
@@ -38,11 +32,9 @@ const Blog = () => {
 								<Link to={`/blog/${post.slug}`} className="text-base font-clash-medium">
 									{post.title}
 								</Link>
-							</div>
-
-							<Link to={`/blog/${post.slug}`} className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-								Read More
-							</Link>
+                        <Link to={`/blog/${post.slug}`} className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                           Read More
+                        </Link>
 						</div>
 					))}
 				</div>

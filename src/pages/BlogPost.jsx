@@ -1,8 +1,9 @@
-import Header from '../components/Header';
+import BlogHeader from '../components/BlogHeader';
 import Footer from '../components/Footer';
 import { useParams, Link, Navigate } from "react-router-dom";
 import { getPostBySlug, getRecentPosts } from "../data/BlogData";
-import AnimatedTitle from '../components/AnimatedTitle';
+import Copy from '../components/Copy';
+// import styles from "./blogpost.module.css";
 
 const BlogPost = () => {
 	const { slug } = useParams();
@@ -15,49 +16,44 @@ const BlogPost = () => {
 
 	return (
 		<div>
-			<Header />
+			<BlogHeader />
 			<section className="main-content">
-				<div className="container">
+				<div className="container-fluid">
 					<article>
                   <div className="pb-60-py">
-								<span>
-									{new Date(post.publishDate).toLocaleDateString("en-US", {
-										year: "numeric",
-										month: "long",
-										day: "numeric",
-									})}
-								</span>
-								<span className=""> | </span>
-								<span>{post.readTime}</span>
-							<AnimatedTitle className="">
-								{post.title}
-							</AnimatedTitle>
+                        <div className="meta-box">
+                           <span>
+                              {new Date(post.publishDate).toLocaleDateString("en-US", {
+                                 year: "numeric",
+                                 month: "long",
+                                 day: "numeric",
+                              })}
+                           </span>
+                           <span className=""> | </span>
+                           <span>{post.readTime}</span>
+                        </div>
+				            <Copy><h2 className="font-playfair text-4xl font-clash-regular line-height-medium">{post.title}</h2></Copy>
 						</div>
-						<img src={post.image} alt={post.title}/>
-                  <div className="pb-60-py">
+						<img className="img-fluid" src={post.image} alt={post.title} width={1500} height={300}/>
+                  {/* <div className="pb-60-py">
 								{post.tags.map((tag) => (
 									<span key={tag} className="">
 										{tag}
 									</span>
 								))}
-						</div>
+						</div> */}
                   <div className="" dangerouslySetInnerHTML={{ __html: post.content }}/>
 						
 					</article>
 
+               <Copy><h3 className="font-playfair text-3xl font-clash-regular line-height-medium h2-m">Related Blogs:</h3></Copy>
 					
 						<div className="blog-list">
-                  {recentPosts.length > 0 && (
-                     <div className="blog-list-item">
-                        <div key={post.id} className="blog-list-item">
+                  {recentPosts.length > 0 &&
+  recentPosts.map((post) => (
+                     <div key={post.id || post.slug} className="blog-list-item">
                            <div className="position-relative">
-                              <img
-                                 src={post.image}
-                                 alt={post.title}
-                                 width="200"
-                                 height="250"
-                                 className="gradient-mask"
-                              />
+                              <img src={post.image} alt={post.title} width="200" height="250" className="gradient-mask img-fluid"/>
                               <div className="blog-list-item-meta">
                                  <p className="text-base font-clash-extralight mb-0 d-inline">
                                     {new Date(post.publishDate).toLocaleDateString()}
@@ -68,17 +64,12 @@ const BlogPost = () => {
                                  </p>
                               </div>
                            </div>
-   
                            <Link to={`/blog/${post.slug}`} className="text-base font-clash-medium">
                               {post.title}
                            </Link>
-                        </div>
-   
-                        <Link to={`/blog/${post.slug}`} className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                           Read More
-                        </Link>
                      </div>
-                 )}
+                 ))
+               }
                </div>
 					
 				</div>

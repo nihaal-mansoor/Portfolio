@@ -32,7 +32,7 @@
 	--text-base: clamp(16px, 3.5vw, 18px);
 	--text-lg: clamp(18px, 4vw, 24px);
 	--text-xl: clamp(24px, 5vw, 32px);
-	--text-2xl: clamp(32px, 6vw, 48px);
+	--text-2xl: clamp(24px, 4vw, 35px);
 	--text-3xl: clamp(25px, 6vw, 48px);
 	--text-4xl: clamp(35px, 8vw, 65px);
 	--text-5xl: clamp(40px, 9vw, 150px);
@@ -55,6 +55,7 @@
 
 	/* Layout */
 	--container-max-width: 1728px;
+	--container-fluid-width: 1200px;
 	--container-padding-inline: clamp(var(--space-xs), 5vw, var(--space-lg));
 	--container-padding-block: var(--space-lg);
 	--container-gap: var(--space-lg);
@@ -67,6 +68,16 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+::-moz-selection { /* Code for Firefox */
+   color: var(--text-100);
+   background: var(--accent-100);
+}
+
+::selection {
+   color: var(--text-100);
+   background: var(--accent-100);
 }
 
 ul li {
@@ -84,13 +95,7 @@ body {
 	background: #141721;
 	color: var(--text-100);
 	background-attachment: fixed;
-	background-image: url(../public/500-50-5.png);
-}
-
-@media (max-width: 768px) {
-   body {
-     background-attachment: scroll; /* fallback for mobile */
-   }
+	background-image: url(/500-50-5.png);
 }
 
 hr {
@@ -104,6 +109,12 @@ hr {
 	display: flex;
 	flex-direction: column;
 	gap: var(--container-gap);
+	margin: auto;
+}
+
+.container-fluid {
+   max-width: var(--container-fluid-width);
+	padding: var(--space-lg) var(--container-padding-inline);
 	margin: auto;
 }
 
@@ -211,6 +222,10 @@ hr {
 /* Typography Styling */
 .line-height-base {
 	line-height: 1;
+}
+
+.line-height-medium {
+	line-height: 1.4;
 }
 
 p,
@@ -672,4 +687,24 @@ footer p {
    justify-content: space-between;
    flex-wrap: wrap;
    gap: 40px;
+}
+
+/* Blog Page */
+
+.p-m {
+   margin:10px 0;
+}
+
+.h2-m {
+   margin: 50px 0 20px 0;
+}
+
+.img-fluid {
+   width: 100%;
+   height: auto;
+}
+
+.meta-box {
+   display: flex;
+   gap: 10px;
 }

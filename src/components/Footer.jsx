@@ -1,10 +1,6 @@
-import React from 'react'
-// import gitHubIcon from '../assets/github-icon.svg';
-// import linkedInIcon from '../assets/linkedin-icon.svg';
-
 const Footer = () => {
   return (
-        <footer className='container border-top d-flex'>
+        <footer id="footer" className='container border-top d-flex'>
          <div className='d-flex f-container'>
             <h2 className="font-playfair text-4xl font-clash-regular line-height-base split-text"><span className="text-4xl font-clash-bold accent-100"></span>Let's Work Together!</h2>
             <a className='email-link text-3xl font-clash-regular' href="mailto:nihaal.mansoor@outlook.com">nihaal.mansoor@outlook.com</a>

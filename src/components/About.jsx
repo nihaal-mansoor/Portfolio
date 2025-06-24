@@ -1,5 +1,3 @@
-// import AnimatedTitle from './AnimatedTitle';
-import AnimatedHR from './AnimatedHR';
 import Copy from './Copy';
 
 

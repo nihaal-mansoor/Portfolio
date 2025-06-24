@@ -1,4 +1,3 @@
-// import AnimatedTitle from './AnimatedTitle';
 import AnimatedHR from './AnimatedHR';
 import Copy from './Copy';
 
@@ -30,7 +29,7 @@ const Work = () => {
                </div>
                <div>
                   <Copy>
-                     <p className="font-clash-regular">I design and develop SEO-friendly WordPress websites with custom themes, ensuring seamless user experience and optimal performance. I translate client visions into high-quality digital solutions through clear communication and technical expertise, while managing project workflows and facilitating team collaboration.</p>
+                     <p className="font-clash-regular">Currently working as a Front-End Developer, specializing in designing and developing SEO-friendly WordPress websites with custom themes. My role centers on delivering seamless user experiences and high-performance digital products, transforming client ideas into impactful web solutions through clear communication and technical precision. I manage project workflows, promote effective team collaboration, and stay hands-on with modern technologies—actively honing my skills in React, Next.js, and Laravel.</p>
                   </Copy>
                </div>
             </div>
@@ -52,7 +51,7 @@ const Work = () => {
                     </div>
                 </div>
                 <div>
-                <Copy><p className="font-clash-regular">I design and implement customized WordPress websites, collaborating closely with designers and content creators to develop effective website strategies. My role involves tailoring themes and plugins to meet client needs, ensuring optimal performance, security, and SEO, as well as providing ongoing maintenance, troubleshooting, and technical support. I also stay current with the latest WordPress trends and best practices to deliver high-quality results.</p></Copy>
+                <Copy><p className="font-clash-regular">Previously held a PHP Developer position where I focused on crafting customized WordPress websites in close collaboration with designers and content teams. My work involved developing tailored themes and plugins to match specific client needs, with a strong emphasis on performance, security, and SEO optimization. I also handled ongoing site maintenance and provided technical support. During this time, I explored other frameworks like Laravel, Django, and React, expanding my development toolkit and staying aligned with evolving web technologies.</p></Copy>
                 </div>
             </div>
             <AnimatedHR />

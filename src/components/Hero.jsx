@@ -1,5 +1,3 @@
-import React from 'react';
-import { useSplitTextAnimation } from '../hooks/useGSAPAnimations.js';
 import Copy from './Copy';
 
 const Hero = () => {
