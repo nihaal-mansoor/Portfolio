@@ -52,7 +52,8 @@ export const blogPosts = [
 
       <p class="p-m">If you're building or using AI systems, especially for anything that requires planning, logic, or multi-step problem solving, this research is essential reading. It’s a reality check wrapped in a carefully designed experiment.</p>
 
-      <p class="p-m">And now I can’t stop wondering: Are today’s models thinking… or just pretending?</p> `,
+      <p class="p-m">And now I can’t stop wondering: Are today’s models thinking… or just pretending?</p> 
+      <p class="p-m">Check out the complete research publication at: https://machinelearning.apple.com/research/illusion-of-thinking</p>`,
 		author: "Nihaal Mansoor",
 		publishDate: "2025-06-24",
 		readTime: "3 min read",
