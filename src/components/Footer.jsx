@@ -2,11 +2,11 @@ const Footer = () => {
   return (
         <footer id="footer" className='container border-top d-flex'>
          <div className='d-flex f-container'>
-            <h2 className="font-playfair text-4xl font-clash-regular line-height-base split-text"><span className="text-4xl font-clash-bold accent-100"></span>Let's Work Together!</h2>
+            <h2 className="font-playfair text-4xl font-clash-regular line-height-base split-text">LET'S <span className="text-4xl font-clash-bold accent-100">WORK</span> TOGETHER!</h2>
             <a className='email-link text-3xl font-clash-regular' href="mailto:nihaal.mansoor@outlook.com">nihaal.mansoor@outlook.com</a>
          </div>
          <div className='d-flex f-container'>
-            <p className="font-clash text-sm font-clash-extralight">© Nihaal Mansoor 2024.</p>
+            <p className="font-clash text-sm font-clash-extralight">© Nihaal Mansoor 2024</p>
             <div className="social-links d-flex">
                <div className='github'>
                   <a href="https://github.com/nihaal-mansoor" target="_blank" rel="noopener noreferrer">GITHUB</a>
@@ -18,7 +18,7 @@ const Footer = () => {
                </div>
                <div className='downloadCV'>
                   <a href="/nihaal_mansoor_CV.pdf" download="nihaal_mansoor_CV.pdf" target="_blank" rel="noopener noreferrer">
-                     Download CV
+                     DOWNLOAD CV
                   </a>
                   <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor">
                      <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>

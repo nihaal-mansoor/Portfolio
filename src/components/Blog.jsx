@@ -11,13 +11,7 @@ const Blog = () => {
 					{blogPosts.map((post, index) => (
 						<div key={post.id || post.slug} className="blog-list-item">
 								<div className="position-relative">
-									<img
-										src={post.image}
-										alt={post.title}
-										width="200"
-										height="250"
-										className="gradient-mask"
-									/>
+									<img src={post.image} alt={post.title} width="200" height="250" className="gradient-mask"/>
 									<div className="blog-list-item-meta">
 										<p className="text-base font-clash-extralight mb-0 d-inline">
 											{new Date(post.publishDate).toLocaleDateString()}
@@ -28,7 +22,6 @@ const Blog = () => {
 										</p>
 									</div>
 								</div>
-
 								<Link to={`/blog/${post.slug}`} className="text-base font-clash-medium">
 									{post.title}
 								</Link>

@@ -23,11 +23,11 @@ export const blogPosts = [
       <h2 class="text-base text-2xl font-clash-regular h2-m">The Three Regimes of Model Behavior</h2>
       <p class="p-m">Across all puzzles, the models fell into three distinct behavior patterns depending on problem complexity:</p>
 
-      <p class="p-m"><b>Low Complexity:</b> Standard models (no “thinking”) actually outperformed the reasoning models! They were faster, more accurate, and didn’t waste tokens on unnecessary thought.</p>
+      <p class="p-m">1. <b>Low Complexity:</b> Standard models (no “thinking”) actually outperformed the reasoning models! They were faster, more accurate, and didn’t waste tokens on unnecessary thought.</p>
 
-      <p class="p-m"><b>Medium Complexity:</b> This is where LRMs shined. They used their reasoning abilities to outperform their simpler counterparts—finally, a payoff for all that thinking.</p>
+      <p class="p-m">2. <b>Medium Complexity:</b> This is where LRMs shined. They used their reasoning abilities to outperform their simpler counterparts—finally, a payoff for all that thinking.</p>
 
-      <p class="p-m"><b>High Complexity:</b> Here's the shocker—all models completely collapsed. Accuracy dropped to zero, and—get this—the reasoning models started thinking less as the problems got harder. Even though they had enough tokens left to reason more, they didn’t use them.</p>
+      <p class="p-m">3. <b>High Complexity:</b> Here's the shocker—all models completely collapsed. Accuracy dropped to zero, and—get this—the reasoning models started thinking less as the problems got harder. Even though they had enough tokens left to reason more, they didn’t use them.</p>
 
       <p class="p-m">That last bit totally flipped my expectations. Shouldn’t models try harder when a problem gets tougher? Apparently not.</p>
 
@@ -36,7 +36,7 @@ export const blogPosts = [
 
       <p class="p-m">Once the problems got too complex, though, even their thoughts broke down. No correct reasoning. No clear plan. Just flailing.</p>
 
-      <p class="p-m">It felt eerily human in a way—like when you're so overwhelmed by a puzzle that you just start guessing. But obviously, we want AI to do better than that.</p>
+      <p class="p-m">It felt eerily human in a way, like when you're so overwhelmed by a puzzle that you just start guessing. But obviously, we want AI to do better than that.</p>
 
       <h2 class="text-base text-2xl font-clash-regular h2-m">Even When Given the Algorithm, They Still Struggle</h2>
       <p class="p-m">The most eye-opening experiment? The researchers handed the models explicit algorithms for solving puzzles like Tower of Hanoi. All the models had to do was follow instructions. And yet—they still failed beyond a certain complexity.</p>
@@ -63,7 +63,7 @@ export const blogPosts = [
 	{
 		id: 2,
 		slug: "modern-css-techniques",
-		title: "Front-End Security: Why Your Website's Pretty Face Needs Protection Too",
+		title: "Why Your Website's Pretty Face Needs Protection.",
 		excerpt: "...",
 		content: `
       <p class="p-m">We often think of cybersecurity as something that happens on servers, in databases, or behind the scenes. But here's the thing - your website's front-end (that beautiful interface users see and interact with) is actually the first line of defense against cyber attacks. And unfortunately, it's also one of the most vulnerable parts of your web application.</p>

@@ -7,7 +7,7 @@ const Work = () => {
     <section id="work" className="work">
         <div className="container">
             <Copy>
-               <h2 className="font-playfair text-4xl font-clash-regular line-height-base split-text"><span className="text-4xl font-clash-bold accent-100">W</span>ORK</h2>
+               <h2 className="font-playfair text-4xl font-clash-regular line-height-base split-text">WORK <span className="text-4xl font-clash-bold accent-100">EXPERIENCE</span></h2>
             </Copy>
             <div className="job-list">
                <Copy>

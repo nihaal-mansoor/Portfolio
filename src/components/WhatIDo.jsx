@@ -9,15 +9,10 @@ const WhatIDo = () => {
 	return (
 		<section id="what-i-do" className="what-i-do">
 			<div className="container">
-            <Copy><h2 className="font-playfair text-4xl font-clash-regular line-height-base split-text"><span className="text-4xl font-clash-bold accent-100">W</span>HAT I DO</h2></Copy>
+            <Copy><h2 className="font-playfair text-4xl font-clash-regular line-height-base split-text">WHAT I <span className="text-4xl font-clash-bold accent-100">DO</span></h2></Copy>
 				<div className="what-i-do-list">
 					<div className="what-i-do-item">
-						<img
-							src={websiteDevelopmentIcon}
-							alt="WordPress"
-							width="30"
-							height="30"
-						/>
+						<img src={websiteDevelopmentIcon} alt="WordPress" width="30" height="30"/>
                   <Copy>
 						   <h3 className="text-base font-clash-medium">Website Development</h3>
                   </Copy>
@@ -39,11 +34,7 @@ const WhatIDo = () => {
                   </Copy>
 					</div>
 					<div className="what-i-do-item">
-						<img
-							src={websiteMaintenanceIcon}
-							alt="Maintenance"
-							width="30"
-							height="30"
+						<img src={websiteMaintenanceIcon} alt="Maintenance" width="30" height="30"
 						/>
 						<Copy>
                      <h3 className="text-base font-clash-medium">Website Maintenance</h3>
